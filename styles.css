@@ -28,6 +28,12 @@ h3 {
   font-size: 1rem;
 }
 
+.contents {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
 li {
   list-style: none;
 }
@@ -36,30 +42,92 @@ p {
   line-height: 1.6;
 }
 
-img {
-  vertical-align: bottom;
+body {
+  font-family: SODO Sans, SoDoSansRegular, system-ui, Arial, serif;
+}
+.bg-image-style {
+  background: url(./imgs/photo-1606486544554-164d98da4889.avif) no-repeat 100%;
+  background-size: cover;
 }
 
-body {
-  background-color: #f2f0ea;
-  font-family: SODO Sans, SoDoSansRegular, system-ui, Arial, serif;
+.use_rgba-image {
+  background: rgba(255, 255, 255, 0.118);
 }
 
 /* header */
 
+.logo {
+  position: relative;
+  top: 60%;
+  right: 20%;
+}
 header .header_container {
-  width: 75%;
-  /* outline: 1px solid pink; */
-  background-color: #006140;
+  background-image: url(./imgs/594px-Starbucks_Corporation_Logo_2011.svg.png);
+  background-position: right 30%;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 70%;
   color: #fff;
-  padding: 16px;
-  margin: 24px auto;
+  padding: 36px;
+  margin: 0px auto;
   border-radius: 12px;
+  line-height: 1.4;
+  overflow-wrap: break-word;
 }
 
-header h2 {
+header h1 {
+  width: 80%;
   margin-top: 8px;
   color: #f2f0ea;
+  overflow-wrap: break-word;
+}
+
+.header_container .desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 4.2rem;
+    padding: 36px;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 60px;
+  }
 }
 
 /* main */
@@ -70,20 +138,14 @@ main h2 {
 
 /* section */
 .section {
-  /* outline: 1px solid pink; */
-  margin: 18px auto;
-  width: 75%;
+  margin: 36px auto;
+  width: 70%;
   background-color: rgba(249, 249, 249, 0.6);
-  padding: 24px;
+  padding: 42px;
+  border-radius: 8px;
 }
 
 /* section1 */
-
-/* .contents1{
-  background-image: url(./imgs/S5_H1_0.webp);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
 
 .place:first-child {
   margin-top: 16px;
@@ -92,9 +154,9 @@ main h2 {
   /* outline: 1px solid red; */
   color: #1e3832;
   width: 45%;
-  margin: 16px auto;
+  margin: 1.6rem auto;
   text-align: center;
-  padding: 16px 0;
+  padding: 1.6rem 0;
   background-color: #d4e8e1;
   margin-top: 8px;
   border-radius: 12px;
@@ -107,6 +169,43 @@ main h2 {
   height: 300px;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .places {
+    display: flex;
+  }
+  .place {
+    margin: 1.2rem;
+  }
+
+  .place li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .place h3 {
+    display: block;
+    padding: 16px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .places {
+    display: flex;
+  }
+  .place {
+    margin: 1.2rem;
+  }
+  .place li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .place h3 {
+    display: block;
+
+    padding: 16px;
+  }
+}
 /* section2 */
 .roast {
   color: #1e3832;
@@ -122,13 +221,12 @@ main h2 {
 
 .roast_desc {
   padding-top: 12px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .roast_detail {
   display: flex;
-  /* height: 200px; */
   box-sizing: border-box;
   position: relative;
 }
@@ -144,13 +242,38 @@ main h2 {
   width: 45%;
   top: 50%;
   left: 50%;
-  transform: translate;
   background-color: #f2f0ea;
   border-radius: 6px;
   color: #01754a;
   padding: 2px;
   box-sizing: border-box;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .roast_details {
+    display: flex;
+  }
+
+  .roast_detail {
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    position: static;
+  }
+
+  .roast_detail img {
+    display: block;
+    width: 50%;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .roast_detail p {
+    display: block;
+    position: static;
+    margin-top: 12px;
+  }
 }
 
 /* section3*/
@@ -169,4 +292,9 @@ main h2 {
   margin-top: 16px;
   border-radius: 12px;
   box-shadow: 0 0 2.2rem -1.2rem;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .section {
+  }
 }
