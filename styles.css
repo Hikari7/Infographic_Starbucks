@@ -1,6 +1,144 @@
-.roast_img
-{
-    display: block;
-    width: 300px;
-    height: 300px;
+/* common */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  background-color: #f2f0ea;
+  font-family: SODO Sans, SoDoSansRegular, system-ui, Arial, serif;
+}
+
+/* header */
+
+header .header_container {
+  width: 75%;
+  /* outline: 1px solid pink; */
+  background-color: #006140;
+  color: #fff;
+  padding: 16px;
+  margin: 24px auto;
+  border-radius: 12px;
+}
+
+header h2 {
+  margin-top: 8px;
+}
+
+/* main */
+
+main h2 {
+  padding-bottom: 8px;
+}
+
+/* section */
+.section {
+  /* outline: 1px solid pink; */
+  margin: 18px auto;
+  width: 75%;
+  background-color: rgba(249, 249, 249, 0.6);
+  padding: 24px;
+}
+
+/* section1 */
+
+/* .contents1{
+  background-image: url(./imgs/S5_H1_0.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.place:first-child {
+  margin-top: 16px;
+}
+.place {
+  /* outline: 1px solid red; */
+  color: #1e3832;
+  width: 45%;
+  margin: 16px auto;
+  text-align: center;
+  padding: 16px 0;
+  background-color: #d4e8e1;
+  margin-top: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 2.2rem -1.2rem;
+}
+
+.roast_img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+/* section1 */
+.roast {
+  color: #1e3832;
+  width: auto;
+  margin: 24px auto;
+  text-align: center;
+  padding: 16px 0;
+  background-color: #d4e8e1;
+  margin-top: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 2.2rem -1.2rem;
+}
+
+.roast_desc {
+  padding-top: 12px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.roast_detail {
+  display: flex;
+  /* height: 200px; */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.roast_detail img {
+  width: 50%;
+  height: 50%;
+}
+
+.roast_detail p {
+  display: inline;
+  position: absolute;
+  width: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate;
 }
