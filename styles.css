@@ -36,6 +36,7 @@ h3 {
 
 li {
   list-style: none;
+  margin-top: 24px;
 }
 
 p {
@@ -87,7 +88,7 @@ header h1 {
   display: none;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 500px) and (max-width: 768px) {
   h1 {
     font-size: 3.2rem;
   }
@@ -150,17 +151,22 @@ main h2 {
 .place:first-child {
   margin-top: 16px;
 }
+
+.places {
+  display: block;
+  padding: 0;
+  margin: 0px;
+}
 .place {
-  /* outline: 1px solid red; */
   color: #1e3832;
-  width: 45%;
+  width: 50%;
   margin: 1.6rem auto;
   text-align: center;
   padding: 1.6rem 0;
   background-color: #d4e8e1;
   margin-top: 8px;
   border-radius: 12px;
-  box-shadow: 0 0 2.2rem -1.2rem;
+  box-shadow: 0 0 3rem -0.8rem;
 }
 
 .roast_img {
@@ -169,17 +175,20 @@ main h2 {
   height: 300px;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 500px) and (max-width: 768px) {
   .places {
     display: flex;
+    padding: 0;
+    margin: 0px;
   }
   .place {
     margin: 1.2rem;
+    width: calc(100% / 3);
   }
 
   .place li {
     display: table-cell;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
 
   .place h3 {
@@ -191,13 +200,16 @@ main h2 {
 @media only screen and (min-width: 769px) {
   .places {
     display: flex;
+    padding: 0;
+    margin: 0px;
   }
   .place {
     margin: 1.2rem;
+    width: calc(100% / 3);
   }
   .place li {
     display: table-cell;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
 
   .place h3 {
@@ -210,13 +222,13 @@ main h2 {
 .roast {
   color: #1e3832;
   width: auto;
-  margin: 24px auto;
+  margin: 36px auto;
   text-align: center;
-  padding: 16px 0;
+  padding: 24px 0;
   background-color: #d4e8e1;
-  margin-top: 16px;
+  margin-top: 24px;
   border-radius: 12px;
-  box-shadow: 0 0 2.2rem -1.2rem;
+  box-shadow: 0 0 3rem -0.8rem;
 }
 
 .roast_desc {
@@ -250,9 +262,13 @@ main h2 {
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 500px) {
   .roast_details {
     display: flex;
+  }
+
+  .roast {
+    margin-top: 42x;
   }
 
   .roast_detail {
@@ -274,6 +290,10 @@ main h2 {
     position: static;
     margin-top: 12px;
   }
+  .roast_detail img {
+    width: 50%;
+    height: 80%;
+  }
 }
 
 /* section3*/
@@ -287,14 +307,9 @@ main h2 {
   width: auto;
   margin: 24px auto;
   text-align: center;
-  padding: 16px;
+  padding: 24px;
   background-color: #d4e8e1;
-  margin-top: 16px;
+  margin-top: 24px;
   border-radius: 12px;
-  box-shadow: 0 0 2.2rem -1.2rem;
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .section {
-  }
+  box-shadow: 0 0 3rem -0.8rem;
 }
