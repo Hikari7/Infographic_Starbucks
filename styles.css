@@ -20,6 +20,10 @@ h1 {
   margin: 0;
 }
 
+h2,
+h3 {
+  color: #006140;
+}
 h3 {
   font-size: 1rem;
 }
@@ -55,6 +59,7 @@ header .header_container {
 
 header h2 {
   margin-top: 8px;
+  color: #f2f0ea;
 }
 
 /* main */
@@ -102,7 +107,7 @@ main h2 {
   height: 300px;
 }
 
-/* section1 */
+/* section2 */
 .roast {
   color: #1e3832;
   width: auto;
@@ -120,7 +125,6 @@ main h2 {
   width: 80%;
   margin: 0 auto;
 }
-
 
 .roast_detail {
   display: flex;
@@ -141,4 +145,28 @@ main h2 {
   top: 50%;
   left: 50%;
   transform: translate;
+  background-color: #f2f0ea;
+  border-radius: 6px;
+  color: #01754a;
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+}
+
+/* section3*/
+
+.step h3 {
+  margin: 16px 0;
+}
+
+.step {
+  color: #1e3832;
+  width: auto;
+  margin: 24px auto;
+  text-align: center;
+  padding: 16px;
+  background-color: #d4e8e1;
+  margin-top: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 2.2rem -1.2rem;
 }
