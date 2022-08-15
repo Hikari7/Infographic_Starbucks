@@ -46,52 +46,46 @@ p {
 body {
   font-family: SODO Sans, SoDoSansRegular, system-ui, Arial, serif;
 }
-.bg-image-style {
-  background: url(./imgs/photo-1606486544554-164d98da4889.avif) no-repeat 100%;
-  background-size: cover;
-}
 
-.use_rgba-image {
-  background: rgba(255, 255, 255, 0.118);
+.bg-style {
+  background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 5%,
+      #f2f0ea 10%
+    ),
+    url(./imgs/photo-1606486544554-164d98da4889.avif);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 /* header */
 
-.logo {
-  position: relative;
-  top: 60%;
-  right: 20%;
-}
 header .header_container {
-  background-image: url(./imgs/594px-Starbucks_Corporation_Logo_2011.svg.png);
-  background-position: right 30%;
-  background-size: contain;
-  position: relative;
-  background-repeat: no-repeat;
-  width: 70%;
-  color: #fff;
-  padding: 36px;
+  width: 80%;
+  display: flex;
+  /* margin: 36px auto; */
   margin: 0px auto;
-  border-radius: 12px;
-  line-height: 1.4;
-  overflow-wrap: break-word;
+  padding: 36px;
 }
 
 header h1 {
-  width: 80%;
-  margin-top: 8px;
+  font-size: 2.8rem;
   color: #f2f0ea;
-  overflow-wrap: break-word;
-}
-
-.header_container .desktop {
-  display: none;
+  display: block;
+  text-align-last: left;
 }
 
 @media only screen and (min-width: 550px) and (max-width: 768px) {
   h1 {
     font-size: 3.2rem;
   }
+
+  header h1 {
+    font-size: 3.2rem;
+  }
+
   h2 {
     font-size: 2.4rem;
   }
@@ -113,6 +107,10 @@ header h1 {
   h1 {
     font-size: 4.2rem;
     padding: 36px;
+  }
+
+  header h1 {
+    font-size: 4.2rem;
   }
 
   h2 {
@@ -297,16 +295,28 @@ main h2 {
 }
 
 /* section3*/
+.step {
+  display: flex;
+}
+
+.step_num {
+  color: #006140;
+  font-family: Georgia;
+  display: block;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  font-size: 10em;
+}
 
 .step h3 {
   margin: 16px 0;
 }
 
 .step {
-  color: #1e3832;
+  color: #006140;
   width: auto;
   margin: 24px auto;
-  text-align: center;
   padding: 24px;
   background-color: #d4e8e1;
   margin-top: 24px;
@@ -315,5 +325,15 @@ main h2 {
 }
 
 .section:last-child {
+  padding-bottom: 36px;
   margin-bottom: 0;
+}
+
+.step_desc {
+  text-align-last: left;
+  width: 70%;
+}
+
+.step_desc p {
+  color: #000;
 }
