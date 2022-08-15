@@ -88,7 +88,7 @@ header h1 {
   display: none;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (min-width: 550px) and (max-width: 768px) {
   h1 {
     font-size: 3.2rem;
   }
@@ -175,7 +175,7 @@ main h2 {
   height: 300px;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+@media only screen and (min-width: 550px) and (max-width: 768px) {
   .places {
     display: flex;
     padding: 0;
@@ -262,7 +262,7 @@ main h2 {
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 550px) {
   .roast_details {
     display: flex;
   }
@@ -312,4 +312,8 @@ main h2 {
   margin-top: 24px;
   border-radius: 12px;
   box-shadow: 0 0 3rem -0.8rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
 }
