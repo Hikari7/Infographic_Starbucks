@@ -235,6 +235,9 @@ main h2 {
   margin: 0 auto;
 }
 
+.roast_desc h3 {
+  font-size: 1.4rem;
+}
 .roast_detail {
   display: flex;
   box-sizing: border-box;
@@ -287,6 +290,7 @@ main h2 {
     display: block;
     position: static;
     margin-top: 12px;
+    font-size: 1.6em;
   }
   .roast_detail img {
     width: 50%;
@@ -306,11 +310,13 @@ main h2 {
   height: 100%;
   width: 30%;
   text-align: center;
-  font-size: 10em;
+  font-size: 8em;
+  align-items: center;
 }
 
 .step h3 {
-  margin: 16px 0;
+  margin: 10px 0;
+  font-size: 1.3rem;
 }
 
 .step {
@@ -336,4 +342,30 @@ main h2 {
 
 .step_desc p {
   color: #000;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+  .step h3 {
+    font-size: 2.2rem;
+  }
+  .step p {
+    font-size: 1.2rem;
+  }
+
+  .step_num {
+    font-size: 9rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .step h3 {
+    font-size: 2.4rem;
+  }
+  .step p {
+    font-size: 1.6rem;
+  }
+
+  .step_num {
+    font-size: 10rem;
+  }
 }
